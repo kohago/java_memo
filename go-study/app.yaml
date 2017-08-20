@@ -1,4 +1,4 @@
-rumtime:go
+rumtime: go
 api_version: gol
 
 handlers:
