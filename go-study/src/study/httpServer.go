@@ -18,7 +18,7 @@ func main(){
 	persons = make([]Person,0);
 	http.HandleFunc("/Person",showPerson)
 	//http.HandleFunc("/Person/new",addPerson)
-	http.ListenAndServe(":80",nil)
+	http.ListenAndServe(":8080",nil)
 }
 
 func showPerson(w http.ResponseWriter,r *http.Request){
