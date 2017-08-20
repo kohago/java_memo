@@ -1,0 +1,6 @@
+rumtime:go
+api_version: gol
+
+handlers:
+  - url: /.*
+    script: _go_app
