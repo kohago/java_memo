@@ -22,7 +22,7 @@ func init(){
 }
 
 func showPerson(w http.ResponseWriter,r *http.Request){
-	fmt.Fprintln(w,"{\"name\":\"zhou guang bo\"")
-	fmt.Fprintln(w,"\"sex\":\"1\",")
+	fmt.Fprintln(w,"{\"name\":\"zhou guang bo\",")
+	fmt.Fprintln(w,"\"sex\":\"1\"")
 	fmt.Fprintln(w,"}")
 }
