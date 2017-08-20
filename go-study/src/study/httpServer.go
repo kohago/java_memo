@@ -1,4 +1,4 @@
-package main
+package hello
 
 import(
 	"fmt"
@@ -14,7 +14,7 @@ type Person struct{
 
 var persons []Person;
 
-func main(){
+func init(){
 	persons = make([]Person,0);
 	http.HandleFunc("/",showPerson)
 	//http.HandleFunc("/Person/new",addPerson)
