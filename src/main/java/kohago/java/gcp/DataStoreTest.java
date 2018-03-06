@@ -1,14 +1,13 @@
-package co.jp.topgate.migration;
+package kohago.java.gcp;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.stream.IntStream;
-
-import org.junit.Test;
 
 import com.google.cloud.datastore.Datastore;
 import com.google.cloud.datastore.DatastoreOptions;
 import com.google.cloud.datastore.Query;
 import com.google.cloud.datastore.QueryResults;
+import org.junit.Test;
 
 public class DataStoreTest {
 
@@ -57,6 +56,7 @@ public class DataStoreTest {
 			this.finish = finish;
 		}
 
+		@Override
 		public void run() {
 			try {
 				start.await();
