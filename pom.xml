@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-gcp-storage</artifactId>
-			<version>1.0.0.M1</version>
+			<version>1.0.0.M2</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -56,9 +56,6 @@
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/libs-milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
 		</repository>
 	</repositories>
 </project>
