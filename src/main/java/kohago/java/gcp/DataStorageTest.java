@@ -12,7 +12,7 @@ import com.google.cloud.storage.StorageOptions;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import org.springframework.cloud.gcp.storage.GoogleStorageResource;
+import org.springframework.cloud.gcp.storage.GoogleStorageResourceObject;
 import org.springframework.core.io.Resource;
 
 public class DataStorageTest {
@@ -42,7 +42,7 @@ public class DataStorageTest {
 	public void test1() throws Exception {
 		Storage storage = StorageOptions.getDefaultInstance().getService();
 		String inputPath = String.format("gs://%s/backup/%s", "your-gcp-test", "masterTravelForm-*.csv");
-		Resource resource = new GoogleStorageResource(storage, inputPath);
+		Resource resource = new GoogleStorageResourceObject(storage, inputPath);
 		System.out.println(resource.getFilename());
 	}
 
