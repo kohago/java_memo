@@ -1,2 +1,2 @@
-# java_gcp
+# java_memo
 try gcp's java library
